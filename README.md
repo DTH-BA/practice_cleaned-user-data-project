@@ -30,6 +30,6 @@ This project demonstrates the process of cleaning a real-world user dataset usin
 - **Phone**: Reformatted to 10-digit strings
 - **Account Status**: Mapped fuzzy values (e.g., `inactiv`, `acitve`) to `Active`/`Inactive`
 
-## ✅ Tools Used
+## Tools Used
 - Microsoft Excel (Formulas, Conditional Formatting)
 - Manual inspection & formula-based cleaning
