@@ -1,35 +1,37 @@
-# Cleaned User Data Project
+# Excel Data Cleaning Practice – Simulated User Dataset
 
-This project demonstrates the process of cleaning a real-world user dataset using Microsoft Excel. The goal is to prepare the data for further analysis by removing inconsistencies, formatting issues, and invalid entries.
+This project is a hands-on **practice exercise** using a **simulated dataset** to mimic common real-world data cleaning tasks. The entire process was performed using **Microsoft Excel**, focusing on identifying and correcting common data quality issues.
 
-## Objectives
-- Practice data cleaning and formatting in Excel
-- Standardize user-related fields (e.g., Gender, Country, Phone)
-- Handle missing or malformed values
+## Objective
+- Practice essential data cleaning techniques using Excel.
+- Apply logical steps to standardize and validate inconsistent entries.
+- Build readiness for real-world data cleaning tasks in business or analytics roles.
 
-## Files
-- `raw_users_data.xlsx`: The original raw dataset and the proleaned User Data Project
+## Cleaning Tasks Performed
 
-This project demonstrates the process of cleaning a real-world user dataset using Microsoft Excel. The goal is to prepare the data for further analysis by removing inconsistencies, formatting issues, and invalid entries.
+| Field           | Cleaning Action |
+|----------------|-----------------|
+| `User_ID`       | Checked for duplicates; ensured each ID is unique |
+| `Name`          | Trimmed extra spaces and applied Proper Case formatting |
+| `Gender`        | Standardized to `Male`, `Female`, or `Unknown` |
+| `Signup_Date`   | Validated and standardized date formats |
+| `Country`       | Normalized values like `usa`, `U$A`, `ca` to `USA`, `Canada`, or `Unknown` |
+| `Age`           | Removed or corrected outliers (e.g., `-1`, `9999`) |
+| `Phone`         | Removed formatting characters; converted to 10-digit number |
+| `Account_Status`| Mapped misspelled or inconsistent values to `Active` or `Inactive` |
 
-## Objectives
-- Practice data cleaning and formatting in Excel
-- Standardize user-related fields (e.g., Gender, Country, Phone)
-- Handle missing or malformed values
+## Files Included
+- `raw_users_data_large_shuffled.xlsx` – Simulated raw dataset for practice
+- `cleaned_users_data.xlsx` – Final cleaned dataset (Excel)
+- `README.md` – Documentation of the cleaning process
 
-## Files
-- `raw_users_data.xlsx`: The original raw dataset and proccessing
-- `cleaned_users_data.xlsx`: Final cleaned dataset
-- `README.md`: Project overview and documentation
+## Tools & Techniques
+- **Microsoft Excel** only
+  - Functions used: `IF`, `LOWER`, `PROPER`, `SUBSTITUTE`, `TEXT`, `VALUE`, `TRIM`, `LEN`
+  - Filtering, conditional formatting, and duplicate detection
+  - Manual review and logic-based corrections
 
-## Cleaning Steps
-- **Gender**: Standardized to `Male`, `Female`, or `Unknown`
-- **Signup Date**: Parsed and validated
-- **Country**: Normalized to `USA`, `Canada`, or `Unknown`
-- **Age**: Removed outliers like `-1`, `9999`, and corrected obvious errors
-- **Phone**: Reformatted to 10-digit strings
-- **Account Status**: Mapped fuzzy values (e.g., `inactiv`, `acitve`) to `Active`/`Inactive`
-
-## Tools Used
-- Microsoft Excel (Formulas, Conditional Formatting)
-- Manual inspection & formula-based cleaning
+## Notes
+- This is a **learning project** using **fake/mock data** to simulate the types of issues encountered in real datasets.
+- It does **not** use real user data or originate from a production environment.
+- The focus is on developing **hands-on Excel cleaning skills** commonly required in analytics workflows.
